@@ -27,6 +27,25 @@ def product():
 def store():
     return render_template('store.html')
 
+@app.route('/contacts')
+def contacts():
+    return render_template('contacts.html')
+
+@app.route('/delivery')
+def delivery():
+    return render_template('delivery.html')
+
+@app.route('/exchange')
+def exchange():
+    return render_template('exchange.html')
+
+@app.route('/repairs')
+def repairs():
+    return render_template('repairs.html')
+
+@app.route('/shares')
+def shares():
+    return render_template('shares.html')
 
 
 
