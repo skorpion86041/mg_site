@@ -47,7 +47,13 @@ def repairs():
 def shares():
     return render_template('shares.html')
 
+@app.route('/training')
+def training():
+    return render_template('training.html')
 
+@app.route('/training2')
+def training2():
+    return render_template('training2.html')
 
 
 
