@@ -55,6 +55,18 @@ def training():
 def training2():
     return render_template('training2.html')
 
+@app.route('/consoles')
+def consoles():
+    return render_template('consoles.html')
+
+@app.route('/accessories')
+def accessories():
+    return render_template('accessories.html')
+
+@app.route('/games')
+def games():
+    return render_template('games.html')
+
 
 
 # @app.route('/hello')
