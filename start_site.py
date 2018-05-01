@@ -67,6 +67,14 @@ def accessories():
 def games():
     return render_template('games.html')
 
+@app.route('/training3')
+def training3():
+    return render_template('training3.html')
+
+@app.route('/training4')
+def training4():
+    return render_template('training4.html')
+
 
 
 # @app.route('/hello')
