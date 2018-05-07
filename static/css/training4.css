@@ -44,11 +44,10 @@ body {
 }
 
 .main-menu .sub-menu a {
-    display: inline-block;
     margin-bottom: -1px;
     border: 1px solid #e5e5e5;
 }
 
 .main-menu > li:hover .sub-menu {
-    display: inline-block;
+    display: block;
 }
