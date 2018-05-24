@@ -1,5 +1,15 @@
+
 (function($) {
 	"use strict"
+
+	$(document).scroll(function() {
+		var y = $(this).scroll;
+		if (y > 300) {
+			$('.mdc-top-app-bar').fadeIn();
+		} else {
+			$('.mdc-top-app-bar').fadeOut();
+		}
+	});
 
 	// Mobile Nav toggle
 	$('.menu-toggle > a').on('click', function (e) {
@@ -46,20 +56,20 @@
 		});
 	});
 
-	// Products Widget Slick
-	$('.products-widget-slick').each(function() {
-		var $this = $(this),
-				$nav = $this.attr('data-nav');
-
-		$this.slick({
-			infinite: true,
-			autoplay: true,
-			speed: 300,
-			dots: false,
-			arrows: true,
-			appendArrows: $nav ? $nav : false,
-		});
-	});
+	// // Products Widget Slick
+	// $('.products-widget-slick').each(function() {
+	// 	var $this = $(this),
+	// 			$nav = $this.attr('data-nav');
+    //
+	// 	$this.slick({
+	// 		infinite: true,
+	// 		autoplay: true,
+	// 		speed: 300,
+	// 		dots: false,
+	// 		arrows: true,
+	// 		appendArrows: $nav ? $nav : false,
+	// 	});
+	// });
 
 	/////////////////////////////////////////
 
@@ -73,32 +83,32 @@
     asNavFor: '#product-imgs',
   });
 
-	// Product imgs Slick
-  $('#product-imgs').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-    centerMode: true,
-    focusOnSelect: true,
-		centerPadding: 0,
-		vertical: true,
-    asNavFor: '#product-main-img',
-		responsive: [{
-        breakpoint: 991,
-        settings: {
-					vertical: false,
-					arrows: false,
-					dots: true,
-        }
-      },
-    ]
-  });
-
-	// Product img zoom
-	var zoomMainProduct = document.getElementById('product-main-img');
-	if (zoomMainProduct) {
-		$('#product-main-img .product-preview').zoom();
-	}
+	// // Product imgs Slick
+  // $('#product-imgs').slick({
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   arrows: true,
+  //   centerMode: true,
+  //   focusOnSelect: true,
+	// 	centerPadding: 0,
+	// 	vertical: true,
+  //   asNavFor: '#product-main-img',
+	// 	responsive: [{
+  //       breakpoint: 991,
+  //       settings: {
+	// 				vertical: false,
+	// 				arrows: false,
+	// 				dots: true,
+  //       }
+  //     },
+  //   ]
+  // });
+    //
+	// // Product img zoom
+	// var zoomMainProduct = document.getElementById('product-main-img');
+	// if (zoomMainProduct) {
+	// 	$('#product-main-img .product-preview').zoom();
+	// }
 
 	/////////////////////////////////////////
 

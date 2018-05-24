@@ -57,6 +57,11 @@ Table OF Contents
 	Typography
 \*----------------------------*/
 
+.mdc-top-app-bar {
+  background-color: #1E1F29;
+  z-index: 1000;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -1110,6 +1115,7 @@ textarea.input {
   font-size: 70%;
   font-weight: 400;
   color: #8D99AE;
+  margin-left: 8px;
 }
 
 .product-widget .product-body .product-price .qty {
