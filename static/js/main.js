@@ -4,7 +4,7 @@
 
 	$(document).scroll(function() {
 		var y = $(this).scroll;
-		if (y > 300) {
+		if (y > 400) {
 			$('.mdc-top-app-bar').fadeIn();
 		} else {
 			$('.mdc-top-app-bar').fadeOut();
