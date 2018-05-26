@@ -78,7 +78,7 @@
 						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="#" class="logo">
+								<a href="/" class="logo">
 									<img src="static/img/logo.png" alt="">
 								</a>
 							</div>
@@ -173,15 +173,15 @@
 					<!-- NAV -->
 					<ul class="main-menu container">
 						<li {% if request.path == "/consoles" %} class="active" {% endif %}>
-							<a href="/consoles">Приставки</a>
+							<a href="/store">Приставки</a>
 							<ul class="sub-menu">
-								<li><a href="/consoles"><img class="menu-img" src="static/img/ps4.svg"/><br>Playstation</a></li>
-								<li><a href="/accessories"><img class="menu-img" src="static/img/xbox.svg"/><br>Xbox</a></li>
-								<li><a href="/games"><img class="menu-img" src="static/img/ds.svg"/><br>Nintendo</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/ps4.svg"/><br>Playstation</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/xbox.svg"/><br>Xbox</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/ds.svg"/><br>Nintendo</a></li>
 							</ul>
 						</li>
-						<li {% if request.path == "/accessories" %} class="active"{% endif %}> <a href="/accessories">Аксессуары</a></li>
-						<li {% if request.path == "/games" %} class="active"{% endif %}> <a href="/games">Игры</a></li>
+						<li {% if request.path == "/store" %} class="active"{% endif %}> <a href="/store">Аксессуары</a></li>
+						<li {% if request.path == "/store" %} class="active"{% endif %}> <a href="/store">Игры</a></li>
 						<li {% if request.path == "/repairs" %} class="active"{% endif %}><a href="/repairs">Ремонт</a></li>
 					</ul>
 					<!-- /NAV -->
