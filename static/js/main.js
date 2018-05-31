@@ -3,11 +3,12 @@
 	"use strict"
 
 	$(document).scroll(function() {
-		var y = $(this).scroll;
-		if (y > 400) {
-			$('.mdc-top-app-bar').fadeOut();
-		} else {
+		var y = $(this).scrollTop();
+		if (y > 200) {
 			$('.mdc-top-app-bar').fadeIn();
+			$('.mdc-top-app-bar').css('visibility','visible');
+		} else {
+			$('.mdc-top-app-bar').fadeOut();
 		}
 	});
 

@@ -60,6 +60,7 @@ Table OF Contents
 .mdc-top-app-bar {
   background-color: #1E1F29;
   z-index: 1000;
+  visibility: hidden;
 }
 
 body {
