@@ -5,9 +5,9 @@
 	$(document).scroll(function() {
 		var y = $(this).scroll;
 		if (y > 400) {
-			$('.mdc-top-app-bar').fadeIn();
-		} else {
 			$('.mdc-top-app-bar').fadeOut();
+		} else {
+			$('.mdc-top-app-bar').fadeIn();
 		}
 	});
 
