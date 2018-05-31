@@ -46,14 +46,29 @@
   <div class="mdc-top-app-bar__row">
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
       <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
-{#      <span class="mdc-top-app-bar__title">Title</span>#}
+        <div id="demo-menu" class="mdc-menu-anchor">
+            <button href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</button>
+            <div class="mdc-menu">
+                <div class="mdc-menu" tabindex="-1">
+                    <ul class="mdc-menu__items mdc-list" role="menu" aria-hidden="true">
+                        <li class="mdc-list-item" role="menuitem" tabindex="0">
+                            A Menu Item
+                        </li>
+                        <li class="mdc-list-item" role="menuitem" tabindex="-1" aria-disabled="true">
+                            Disabled Menu Item
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {#      <span class="mdc-top-app-bar__title">Title</span>#}
     </section>
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
       <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">account_circle</a>
     </section>
   </div>
 </header>
-        <header>
+{#        <header>#}
 {#			<!-- TOP HEADER -->#}
 {#			<div id="top-header">#}
 {#				<div class="container">#}
@@ -67,9 +82,12 @@
 {#					</ul>#}
 {#				</div>#}
 {#			</div>#}
-			<!-- /TOP HEADER -->
+{#			<!-- /TOP HEADER -->#}
+{##}
+{#			<!-- MAIN HEADER -->#}
 
-			<!-- MAIN HEADER -->
+
+
 			<div id="header">
 				<!-- container -->
 				<div class="container">
@@ -219,7 +237,7 @@
 			<!-- bottom footer -->
 			<div id="bottom-footer" class="section">
 				<div class="container">
-					<!-- row -->
+                    <!-- row -->
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<ul class="footer-payments">
@@ -240,7 +258,7 @@
 							</span>
 						</div>
 					</div>
-						<!-- /row -->
+                    <!-- /row -->
 				</div>
 				<!-- /container -->
 			</div>
