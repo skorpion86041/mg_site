@@ -4,11 +4,10 @@
 
 	$(document).scroll(function() {
 		var y = $(this).scrollTop();
-		if (y > 200) {
-			$('.mdc-top-app-bar').fadeIn();
+		if (y > 180) {
 			$('.mdc-top-app-bar').css('visibility','visible');
 		} else {
-			$('.mdc-top-app-bar').fadeOut();
+			$('.mdc-top-app-bar').css('visibility','hidden');
 		}
 	});
 
