@@ -11,6 +11,18 @@
 		}
 	});
 
+	// Instantiation
+  var menuEl = document.querySelector('#menu');
+  var menu = new mdc.menu.MDCMenu(menuEl);
+  var menuButtonEl = document.querySelector('#menu-button');
+
+  // Toggle menu open
+  menuButtonEl.addEventListener('click', function() {
+    menu.open = !menu.open;
+  });
+
+
+
 	// Mobile Nav toggle
 	$('.menu-toggle > a').on('click', function (e) {
 		e.preventDefault();
