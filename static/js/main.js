@@ -13,7 +13,7 @@
 
 	// Instantiation
   var menuEl = document.querySelector('#menu');
-  var menu = new mdc.menu.MDCMenu(menuEl);
+  mdc.menu.MDCMenu.attachTo(menuEl);
   var menuButtonEl = document.querySelector('#menu-button');
 
   // Toggle menu open
