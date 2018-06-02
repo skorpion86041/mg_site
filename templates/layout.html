@@ -198,8 +198,22 @@
 								<li><a href="/store"><img class="menu-img" src="static/img/ds.svg"/><br>Nintendo</a></li>
 							</ul>
 						</li>
-						<li {% if request.path == "/store" %} class="active"{% endif %}> <a href="/store">Аксессуары</a></li>
-						<li {% if request.path == "/store" %} class="active"{% endif %}> <a href="/store">Игры</a></li>
+						<li {% if request.path == "/store" %} class="active"{% endif %}>
+							<a href="/store">Аксессуары</a>
+							<ul class="sub-menu">
+								<li><a href="/store"><img class="menu-img" src="static/img/ps4.svg"/><br>Playstation</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/xbox.svg"/><br>Xbox</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/ds.svg"/><br>Nintendo</a></li>
+							</ul>
+						</li>
+						<li {% if request.path == "/store" %} class="active"{% endif %}>
+							<a href="/store">Игры</a>
+							<ul class="sub-menu">
+								<li><a href="/store"><img class="menu-img" src="static/img/ps4.svg"/><br>Playstation</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/xbox.svg"/><br>Xbox</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/ds.svg"/><br>Nintendo</a></li>
+							</ul>
+						</li>
 						<li {% if request.path == "/repairs" %} class="active"{% endif %}><a href="/repairs">Ремонт</a></li>
 					</ul>
 					<!-- /NAV -->
