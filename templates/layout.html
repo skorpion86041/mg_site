@@ -195,26 +195,50 @@
 							<ul class="sub-menu">
 								<li><a href="/store"><img class="menu-img" src="static/img/ps4.svg"/><br>Playstation</a></li>
 								<li><a href="/store"><img class="menu-img" src="static/img/xbox.svg"/><br>Xbox</a></li>
-								<li><a href="/store"><img class="menu-img" src="static/img/ds.svg"/><br>Nintendo</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/nintendo_switch.svg"/><br>Nintendo</a></li>
+                                <li><a href="/store"><img class="menu-img" src="static/img/ds.svg"/><br>Ретро</a></li>
 							</ul>
 						</li>
 						<li {% if request.path == "/store" %} class="active"{% endif %}>
 							<a href="/store">Аксессуары</a>
 							<ul class="sub-menu">
-								<li><a href="/store"><img class="menu-img" src="static/img/ps4.svg"/><br>Playstation</a></li>
-								<li><a href="/store"><img class="menu-img" src="static/img/xbox.svg"/><br>Xbox</a></li>
-								<li><a href="/store"><img class="menu-img" src="static/img/ds.svg"/><br>Nintendo</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/joystick_xbox360.svg"/><br>Контроллеры</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/headphones.svg"/><br>Наушники</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/charger_1.svg"/><br>Блоки питания</a></li>
+                                <li><a href="/store"><img class="menu-img" src="static/img/usb-charger.svg"/><br>Data кабели</a></li>
+                                <li><a href="/store"><img class="menu-img" src="static/img/hdmi.svg"/><br>Аудио и видео кабели</a></li>
 							</ul>
 						</li>
 						<li {% if request.path == "/store" %} class="active"{% endif %}>
 							<a href="/store">Игры</a>
 							<ul class="sub-menu">
-								<li><a href="/store"><img class="menu-img" src="static/img/ps4.svg"/><br>Playstation</a></li>
-								<li><a href="/store"><img class="menu-img" src="static/img/xbox.svg"/><br>Xbox</a></li>
-								<li><a href="/store"><img class="menu-img" src="static/img/ds.svg"/><br>Nintendo</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/ps4.svg"/><br>Playstation 4</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/xbox.svg"/><br>Xbox One</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/nintendo_switch.svg"/><br>Nintendo Switch</a></li>
 							</ul>
 						</li>
-						<li {% if request.path == "/repairs" %} class="active"{% endif %}><a href="/repairs">Ремонт</a></li>
+						<li {% if request.path == "/repairs" %} class="active"{% endif %}>
+                            <a href="/repairs">Услуги</a>
+                            <ul class="sub-menu">
+                                <li><a href="/store"><img class="menu-img" src="static/img/ps4.svg"/><br>Ремонт</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/xbox.svg"/><br>Обмен</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/ds.svg"/><br>Выезд специалиста</a></li>
+                            </ul>
+                        </li>
+                        <li {% if request.path == "/delivery" %} class="active"{% endif %}>
+                            <a href="/delivery">Доставка</a>
+                            <ul class="sub-menu">
+                                <li><a href="/store"><img class="menu-img" src="static/img/ps4.svg"/><br>Курьером</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/xbox.svg"/><br>Самовывоз</a></li>
+                            </ul>
+                        </li>
+                        <li {% if request.path == "/contacts" %} class="active"{% endif %}>
+                            <a href="/contacts">Контакты</a>
+                            <ul class="sub-menu">
+                                <li><a href="/store"><img class="menu-img" src="static/img/ps4.svg"/><br>Контактные данные</a></li>
+								<li><a href="/store"><img class="menu-img" src="static/img/xbox.svg"/><br>Как добраться</a></li>
+                            </ul>
+                        </li>
 					</ul>
 					<!-- /NAV -->
 				<!-- /responsive-nav -->
