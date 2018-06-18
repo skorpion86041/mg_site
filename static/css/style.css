@@ -2221,9 +2221,14 @@ textarea.input {
     padding: 0;
     list-style: none;
     background: #15161D;
-    display:none;
-    float: none;
+    /*display:none;*/
+    /*float: none;*/
     white-space: nowrap;
+    flex-wrap: wrap;
+    display: none;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
 }
 
 .main-menu .sub-menu a {
@@ -2231,6 +2236,11 @@ textarea.input {
     margin-top: 0px;
     color: #FFFFFF;
     text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+
 }
 
 .main-menu > li:hover .sub-menu {
@@ -2242,6 +2252,11 @@ textarea.input {
     height: 100%;
     padding: 16px;
     display:inline-block;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+
 }
 
 .sub-menu > li:hover {
@@ -2252,7 +2267,21 @@ textarea.input {
     width: 60px;
     height: 60px;
     padding-bottom: 8px;
+    text-align: center;
 }
+
+.menu-img:nth-child(3n) {
+
+}
+
+.menu-img:nth-child (n + 4){
+      order: 1;
+}
+
+.menu-img:nth-child(n + 7) {
+      order: 2;
+}
+
 
 .footer-block {
     font-size: 16px;
@@ -2274,3 +2303,21 @@ textarea.input {
     word-break: break-all;
     /*margin: 2px;*/
 }
+
+/*.flex {*/
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*border: 2px solid red;*/
+/*}*/
+
+/*.item {*/
+  /*width: 50px;*/
+  /*height: 50px;*/
+  /*margin: 5px;*/
+  /*border: 2px solid blue;*/
+/*}*/
+
+/*.new-string {*/
+  /*width: 100%;*/
+/*}*/
+
