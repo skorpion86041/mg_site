@@ -90,7 +90,7 @@ a:hover, a:focus {
 }
 
 ul, ol {
-  margin: 16px 0px;
+  margin: 2px 0px;
   padding: 0;
   list-style: none
 }
@@ -2198,6 +2198,7 @@ textarea.input {
     padding: 8px 16px;
     color: #2B2D42;
     text-decoration: none;
+    width: auto;
 }
 
 .main-menu > li > a {
@@ -2215,13 +2216,14 @@ textarea.input {
 
 .main-menu .sub-menu {
     position: absolute;
-    width: 460px;
+    width: auto;
     margin: 0;
     padding: 0;
     list-style: none;
     background: #15161D;
     display:none;
-
+    float: none;
+    white-space: nowrap;
 }
 
 .main-menu .sub-menu a {
@@ -2264,4 +2266,11 @@ textarea.input {
 
 .footer-center {
     text-align: center;
+}
+
+.image-menu {
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    word-break: break-all;
+    /*margin: 2px;*/
 }
