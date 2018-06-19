@@ -2189,8 +2189,6 @@ textarea.input {
 .main-menu > li {
     display: inline-block;
     margin-right: -4px;
-    position: relative;
-    z-index: 1;
 }
 
 .main-menu a {
@@ -2216,19 +2214,11 @@ textarea.input {
 
 .main-menu .sub-menu {
     position: absolute;
-    width: auto;
-    margin: 0;
+    z-index: 1;
+    margin: 0 60px 0 0;
     padding: 0;
     list-style: none;
-    background: #15161D;
-    /*display:none;*/
-    /*float: none;*/
-    white-space: nowrap;
-    flex-wrap: wrap;
     display: none;
-    flex-flow: row wrap;
-    align-content: space-between;
-    justify-content: space-between;
 }
 
 .main-menu .sub-menu a {
@@ -2236,27 +2226,20 @@ textarea.input {
     margin-top: 0px;
     color: #FFFFFF;
     text-align: center;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    justify-content: space-between;
-
 }
 
 .main-menu > li:hover .sub-menu {
-    display:block;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .sub-menu > li {
+    background: #15161D;
     width: 150px;
-    height: 100%;
-    padding: 16px;
-    display:inline-block;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    justify-content: space-between;
-
+    padding: 8px;
+    vertical-align: top;
 }
 
 .sub-menu > li:hover {
@@ -2266,22 +2249,9 @@ textarea.input {
 .menu-img {
     width: 60px;
     height: 60px;
-    padding-bottom: 8px;
+    margin: 16px;
     text-align: center;
 }
-
-.menu-img:nth-child(3n) {
-
-}
-
-.menu-img:nth-child (n + 4){
-      order: 1;
-}
-
-.menu-img:nth-child(n + 7) {
-      order: 2;
-}
-
 
 .footer-block {
     font-size: 16px;
@@ -2294,30 +2264,5 @@ textarea.input {
 }
 
 .footer-center {
-    text-align: center;
+  text-align: center;
 }
-
-.image-menu {
-    /*display: inline-block;*/
-    /*vertical-align: middle;*/
-    word-break: break-all;
-    /*margin: 2px;*/
-}
-
-/*.flex {*/
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
-  /*border: 2px solid red;*/
-/*}*/
-
-/*.item {*/
-  /*width: 50px;*/
-  /*height: 50px;*/
-  /*margin: 5px;*/
-  /*border: 2px solid blue;*/
-/*}*/
-
-/*.new-string {*/
-  /*width: 100%;*/
-/*}*/
-
