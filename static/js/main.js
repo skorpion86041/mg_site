@@ -2,27 +2,6 @@
 (function($) {
 	"use strict"
 
-	$(document).scroll(function() {
-		var y = $(this).scrollTop();
-		if (y > 180) {
-			$('.mdc-top-app-bar').css('visibility','visible');
-		} else {
-			$('.mdc-top-app-bar').css('visibility','hidden');
-		}
-	});
-
-	// Instantiation
-  var menuEl = document.querySelector('#menu');
-  mdc.menu.MDCMenu.attachTo(menuEl);
-  var menuButtonEl = document.querySelector('#menu-button');
-
-  // Toggle menu open
-  menuButtonEl.addEventListener('click', function() {
-    menu.open = !menu.open;
-  });
-
-
-
 	// Mobile Nav toggle
 	$('.menu-toggle > a').on('click', function (e) {
 		e.preventDefault();

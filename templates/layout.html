@@ -14,7 +14,7 @@
 		<!-- Bootstrap -->
 		<link type="text/css" rel="stylesheet" href="static/css/bootstrap.min.css"/>
 
-        <link type="text/css" rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"/>
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -42,149 +42,118 @@
 	<body>
 		<!-- HEADER -->
 
-<header class="mdc-top-app-bar mdc-top-app-bar--short">
-  <div class="mdc-top-app-bar__row">
-    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-{#      <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>#}
-        <div id="demo-menu" class="mdc-menu-anchor">
-            <button href="#" class="material-icons mdc-top-app-bar__navigation-icon" id="menu-button">menu</button>
-            <div class="mdc-menu">
-                <div class="mdc-menu" tabindex="-1">
-                    <ul class="mdc-menu__items mdc-list" role="menu" id="menu">
-                        <li class="mdc-list-item" role="menuitem" tabindex="0">
-                            A Menu Item
-                        </li>
-                        <li class="mdc-list-item" role="menuitem" tabindex="-1">
-                            Disabled Menu Item
-                        </li>
-                    </ul>
-                </div>
+<!--<header class="mdc-top-app-bar mdc-top-app-bar&#45;&#45;short">-->
+  <!--<div class="mdc-top-app-bar__row">-->
+    <!--<section class="mdc-top-app-bar__section mdc-top-app-bar__section&#45;&#45;align-start">-->
+<!--{#      <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>#}-->
+        <!--<div id="demo-menu" class="mdc-menu-anchor">-->
+            <!--<button href="#" class="material-icons mdc-top-app-bar__navigation-icon" id="menu-button">menu</button>-->
+            <!--<div class="mdc-menu">-->
+                <!--<div class="mdc-menu" tabindex="-1">-->
+                    <!--<ul class="mdc-menu__items mdc-list" role="menu" id="menu">-->
+                        <!--<li class="mdc-list-item" role="menuitem" tabindex="0">-->
+                            <!--A Menu Item-->
+                        <!--</li>-->
+                        <!--<li class="mdc-list-item" role="menuitem" tabindex="-1">-->
+                            <!--Disabled Menu Item-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--{#      <span class="mdc-top-app-bar__title">Title</span>#}-->
+    <!--</section>-->
+    <!--<section class="mdc-top-app-bar__section mdc-top-app-bar__section&#45;&#45;align-end" role="toolbar">-->
+      <!--<a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">account_circle</a>-->
+    <!--</section>-->
+  <!--</div>-->
+<!--</header>-->
+<!--{#        <header>#}-->
+<!--{#			&lt;!&ndash; TOP HEADER &ndash;&gt;#}-->
+<!--{#			<div id="top-header">#}-->
+<!--{#				<div class="container">#}-->
+<!--{#					<ul class="header-links pull-left">#}-->
+<!--{#						<li><a href="#"><i class="fa fa-phone"></i>+7-977-897-75-30</a></li>#}-->
+<!--{#						<li><a href="#"><i class="fa fa-envelope-o"></i>mitinogame@ya.ru</a></li>#}-->
+<!--{#						<li><a href="#"><i class="fa fa-map-marker"></i>Москва, Пятницкое шоссе, 18</a></li>#}-->
+<!--{#					</ul>#}-->
+<!--{#					<ul class="header-links pull-right">#}-->
+<!--{#						<li><a href="#"><i class="fa fa-user-o"></i> Мой аккаунт</a></li>#}-->
+<!--{#					</ul>#}-->
+<!--{#				</div>#}-->
+<!--{#			</div>#}-->
+<!--{#			&lt;!&ndash; /TOP HEADER &ndash;&gt;#}-->
+<!--{##}-->
+<!--{#			&lt;!&ndash; MAIN HEADER &ndash;&gt;#}-->
+
+
+<!-- Uses a header that contracts as the page scrolls down. -->
+<style>
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+  padding-right: 0;
+}
+</style>
+
+<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--waterfall">
+    <!-- Top row, always visible -->
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <!--<span class="mdl-layout-title">Title</span>-->
+      <div class="mdl-layout-spacer"></div>
+
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+            <a href="/checkout"><i class="material-icons">shopping_cart</i></a>
+        </label>
+
+      <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;expandable-->
+                  <!--mdl-textfield&#45;&#45;floating-label mdl-textfield&#45;&#45;align-right">-->
+        <!--<label class="mdl-button mdl-js-button mdl-button&#45;&#45;icon"-->
+               <!--for="waterfall-exp">-->
+          <!--<i class="material-icons">search</i>-->
+        <!--</label>-->
+        <!--<div class="mdl-textfield__expandable-holder">-->
+          <!--<input class="mdl-textfield__input" name="sample"-->
+                 <!--id="waterfall-exp">-->
+        <!--</div>-->
+      <!--</div>-->
+    </div>
+
+
+    <!-- Bottom row, not visible on scroll -->
+    <div class="mdl-layout__header-row">
+
+        <div id="header">
+            <div class="header-logo">
+                <a href="/" class="logo">
+                    <img src="static/img/logo.png" alt="">
+                </a>
             </div>
+            <!-- /LOGO -->
+            <!-- SEARCH BAR -->
+            <div class="header-search">
+                <form>
+                    <input class="input" placeholder="Поиск">
+                    <button class="search-btn">Найти</button>
+                </form>
+            </div>
+            <!-- /SEARCH BAR -->
         </div>
-        {#      <span class="mdc-top-app-bar__title">Title</span>#}
-    </section>
-    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-      <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">account_circle</a>
-    </section>
+        <!-- container -->
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Левое меню</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Левый пункт 1</a>
+      <a class="mdl-navigation__link" href="">Левый пункт 2</a>
+      <a class="mdl-navigation__link" href="">Левый пункт 3</a>
+    </nav>
   </div>
-</header>
-{#        <header>#}
-{#			<!-- TOP HEADER -->#}
-{#			<div id="top-header">#}
-{#				<div class="container">#}
-{#					<ul class="header-links pull-left">#}
-{#						<li><a href="#"><i class="fa fa-phone"></i>+7-977-897-75-30</a></li>#}
-{#						<li><a href="#"><i class="fa fa-envelope-o"></i>mitinogame@ya.ru</a></li>#}
-{#						<li><a href="#"><i class="fa fa-map-marker"></i>Москва, Пятницкое шоссе, 18</a></li>#}
-{#					</ul>#}
-{#					<ul class="header-links pull-right">#}
-{#						<li><a href="#"><i class="fa fa-user-o"></i> Мой аккаунт</a></li>#}
-{#					</ul>#}
-{#				</div>#}
-{#			</div>#}
-{#			<!-- /TOP HEADER -->#}
-{##}
-{#			<!-- MAIN HEADER -->#}
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here -->
 
-
-
-			<div id="header">
-				<!-- container -->
-				<div class="container">
-					<!-- row -->
-					<div class="row">
-						<!-- LOGO -->
-						<div class="col-md-3">
-							<div class="header-logo">
-								<a href="/" class="logo">
-									<img src="static/img/logo.png" alt="">
-								</a>
-							</div>
-						</div>
-						<!-- /LOGO -->
-
-						<!-- SEARCH BAR -->
-						<div class="col-md-6">
-							<div class="header-search">
-								<form>
-									<input class="input" placeholder="Поиск">
-									<button class="search-btn">Найти</button>
-								</form>
-							</div>
-						</div>
-						<!-- /SEARCH BAR -->
-
-						<!-- ACCOUNT -->
-						<div class="col-md-3 clearfix">
-							<div class="header-ctn">
-								<!-- Wishlist -->
-								<!-- /Wishlist -->
-
-								<!-- Cart -->
-								<div class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-										<i class="fa fa-shopping-cart"></i>
-										<span>Корзина</span>
-										<div class="qty">4</div>
-									</a>
-									<div class="cart-dropdown">
-										<div class="cart-list">
-											<div class="product-widget">
-												<div class="product-img">
-													<img src="static/img/product01.png" alt="">
-												</div>
-												<div class="product-body">
-													<h3 class="product-name"><a href="#">Playstation 4 pro</a></h3>
-													<h4 class="product-price"><span class="qty">1x</span>27000 руб</h4>
-												</div>
-												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-
-											<div class="product-widget">
-												<div class="product-img">
-													<img src="static/img/product02.png" alt="">
-												</div>
-												<div class="product-body">
-													<h3 class="product-name"><a href="#">Dualshock 4</a></h3>
-													<h4 class="product-price"><span class="qty">3x</span>3000 руб</h4>
-												</div>
-												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-										</div>
-										<div class="cart-summary">
-											<small>4 шт.</small>
-											<h5>Сумма: 36000 руб</h5>
-										</div>
-										<div class="cart-btns">
-											<a href="#">В корзину</a>
-											<a href="#">Оформить заказ</a>
-										</div>
-									</div>
-								</div>
-								<!-- /Cart -->
-
-								<!-- Menu Toogle -->
-{#								<div class="menu-toggle">#}
-{#									<a href="#">#}
-{#										<i class="fa fa-bars"></i>#}
-{#										<span>Menu</span>#}
-{#									</a>#}
-{#								</div>#}
-								<!-- /Menu Toogle -->
-							</div>
-						</div>
-						<!-- /ACCOUNT -->
-					</div>
-					<!-- row -->
-				</div>
-				<!-- container -->
-			</div>
-			<!-- /MAIN HEADER -->
-{#		</header>#}
-		<!-- /HEADER -->
-
-		<!-- NAVIGATION -->
-		<nav id="navigation" class="container">
+        <nav id="navigation" class="container">
 			<!-- container -->
 
 				<!-- responsive-nav -->
@@ -254,8 +223,7 @@
 		{% block body %}
         {% endblock %}
 
-
-		<!-- FOOTER -->
+        <!-- FOOTER -->
 		<footer id="footer">
 			<!-- top footer -->
 			<div class="section">
@@ -308,6 +276,11 @@
 		</footer>
 		<!-- /FOOTER -->
 
+    </div>
+  </main>
+</div>
+
+
 		<!-- jQuery Plugins -->
 		<script src="static/js/jquery.min.js"></script>
 		<script src="static/js/bootstrap.min.js"></script>
@@ -315,7 +288,6 @@
 		<script src="static/js/nouislider.min.js"></script>
 		<script src="static/js/jquery.zoom.min.js"></script>
 		<script src="static/js/main.js"></script>
-        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 	</body>
 </html>

@@ -57,20 +57,16 @@ Table OF Contents
 	Typography
 \*----------------------------*/
 
-.mdc-top-app-bar {
-  background-color: #1E1F29;
-  z-index: 1000;
-  visibility: hidden;
-}
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: 400;
   font-size: 14px;
   color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif !important;
   color: #2B2D42;
   font-weight: 700;
   margin: 0 0 10px;
@@ -90,7 +86,7 @@ a:hover, a:focus {
 }
 
 ul, ol {
-  margin: 2px 0px;
+  margin: 5px 0px;
   padding: 0;
   list-style: none
 }
@@ -129,7 +125,6 @@ ul, ol {
   padding: 0px 15px;
   border: 1px solid #E4E7ED;
   background-color: #FFF;
-  width: 100%;
 }
 
 textarea.input {
@@ -301,8 +296,8 @@ textarea.input {
 \*----------------------------*/
 
 .section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .section-title {
@@ -448,57 +443,6 @@ textarea.input {
   margin-right: 5px;
 }
 
-/*----------------------------*\
-	Logo
-\*----------------------------*/
-
-#header {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #15161D;
-}
-
-.header-logo {
-  float: left;
-}
-
-.header-logo .logo img {
-  display: block;
-  width: 90%;
-  padding: 6px 0px;
-}
-
-/*----------------------------*\
-	Search
-\*----------------------------*/
-
-.header-search {
-  padding: 15px 0px;
-}
-
-.header-search form {
-  position: relative;
-}
-
-.header-search form .input {
-  margin-right: -4px;
-  border-radius: 40px 0px 0px 40px;
-}
-
-.header-search form .input {
-  width: calc(100% - 260px);
-  margin-right: -4px;
-}
-
-.header-search form .search-btn {
-  height: 40px;
-  width: 100px;
-  background: #0f7c10;
-  color: #FFF;
-  font-weight: 700;
-  border: none;
-  border-radius: 0px 40px 40px 0px;
-}
 
 /*----------------------------*\
 	Cart
@@ -626,98 +570,6 @@ textarea.input {
   padding-bottom: 15px;
 }
 
-/*=========================================================
-	03 -> Navigation
-===========================================================*/
-
-#navigation {
-  background: #FFF;
-  border-bottom: 2px solid #E4E7ED;
-  border-top: 3px solid #0f7c10;
-}
-
-/*----------------------------*\
-	Main nav
-\*----------------------------*/
-
-.main-nav>li+li {
-  margin-left: 30px
-}
-
-.main-nav>li>a {
-  padding: 20px 0px;
-}
-
-.main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
-  color: #0f7c10;
-  background-color: transparent;
-}
-
-.main-nav>li>a:after {
-  content: "";
-  display: block;
-  width: 0%;
-  height: 2px;
-  background-color: #0f7c10;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-
-.main-nav>li>a:hover:after, .main-nav>li>a:focus:after, .main-nav>li.active>a:after {
-  width: 100%;
-}
-
-.header-ctn li.nav-toggle {
-  display: none;
-}
-
-/*----------------------------*\
-	responsive nav
-\*----------------------------*/
-
-@media only screen and (max-width: 991px) {
-  .header-ctn .menu-toggle {
-    display: inline-block;
-  }
-  #responsive-nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: #15161D;
-    height: 100vh;
-    max-width: 250px;
-    width: 0%;
-    overflow: hidden;
-    z-index: 22;
-    padding-top: 60px;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -webkit-transition: 0.2s all;
-    transition: 0.2s all;
-  }
-  #responsive-nav.active {
-    -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    transform: translateX(0%);
-    width: 100%;
-  }
-  .main-nav {
-    margin: 0px;
-    float: none;
-  }
-  .main-nav>li {
-    display: block;
-    float: none;
-  }
-  .main-nav>li+li {
-    margin-left: 0px;
-  }
-  .main-nav>li>a {
-    padding: 15px;
-    color: #FFF;
-  }
-}
 
 /*=========================================================
 	04 -> CATEGORY SHOP
@@ -2140,13 +1992,13 @@ textarea.input {
     float: none !important;
     margin-top: 5px;
   }
-  .header-logo {
-    float: none;
-    text-align: center;
-  }
-  .header-logo .logo {
-    display: inline-block;
-  }
+  /*.header-logo {*/
+    /*float: none;*/
+    /*text-align: center;*/
+  /*}*/
+  /*.header-logo .logo {*/
+    /*display: inline-block;*/
+  /*}*/
   #product-imgs {
     margin-bottom: 60px;
     margin-top: 15px;
@@ -2184,7 +2036,69 @@ textarea.input {
   }
 }
 
-/*my super style for try gods*/
+/* my super style for try gods */
+
+.mdl-layout__header {
+    background-color: #15161D;
+}
+
+.mdl-layout__header-row {
+    margin: 0 0 16px 0;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: stretch;
+    padding: 8px 0;
+}
+
+.mdl-layout__header-row a {
+    color: #FFFFFF;
+}
+
+/*----------------------------*\
+	Search
+\*----------------------------*/
+
+.header-search {
+    flex-grow: 1;
+    padding: 15px 0px;
+    margin-left: 40%;
+}
+
+.header-search form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.header-search form .input {
+    flex-grow: 1;
+    margin-right: -4px;
+    border-radius: 40px 0px 0px 40px;
+}
+
+.header-search form .search-btn {
+    height: 40px;
+    flex-grow: 0;
+    flex-basis: 100px;
+    background: #0f7c10;
+    color: #FFF;
+    font-weight: 700;
+    border: none;
+    border-radius: 0px 40px 40px 0px;
+}
+
+.main-menu {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
 
 .main-menu > li {
     display: inline-block;
@@ -2214,7 +2128,7 @@ textarea.input {
 
 .main-menu .sub-menu {
     position: absolute;
-    z-index: 1;
+    z-index: 100;
     margin: 0 60px 0 0;
     padding: 0;
     list-style: none;
