@@ -2181,3 +2181,15 @@ textarea.input {
 .footer-center {
   text-align: center;
 }
+
+.mdl-layout__drawer {
+    background: #15161D;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    color: #ffffff;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    background-color: #0f7c10;
+}
