@@ -2222,8 +2222,9 @@ textarea.input {
 
 
 
-/*@media only screen and (max-width: 800px) {*/
-    /*.main-menu {*/
-        /*display: none;*/
-    /*}*/
-/*}*/
+@media only screen and (max-width:800px) {
+    .section-title .title {
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+}
