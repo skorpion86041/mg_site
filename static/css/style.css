@@ -308,6 +308,8 @@ textarea.input {
   background: #FBFBFC;
   border-bottom: 1px solid #E4E7ED;
   margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 #breadcrumb .breadcrumb-header {
@@ -1684,17 +1686,18 @@ textarea.input {
 }
 
 .order-summary .order-col .order-total {
-  font-size: 24px;
-  color: #0f7c10;
+    font-size: 24px;
+    color: #0f7c10;
 }
 
 .order-details .payment-method {
-  margin: 30px 0px;
+    margin: 30px 0px;
 }
 
-.order-details .order-submit {
-  display: block;
-  margin-top: 30px;
+.order-details .order-submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 /*/*=========================================================*/
@@ -2115,7 +2118,7 @@ textarea.input {
 .main-menu .sub-menu {
     position: absolute;
     z-index: 100;
-    margin: 0 60px 0 0;
+    margin: 0 30px 0 0;
     padding: 0;
     list-style: none;
     display: none;

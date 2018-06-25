@@ -1,160 +1,82 @@
 {% extends "layout.html" %}
 {% block body %}
-		<!-- BREADCRUMB -->
-		<div id="breadcrumb" class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<div class="col-md-12">
-						<h3 class="breadcrumb-header">Оформить заказ</h3>
-						<ul class="breadcrumb-tree">
-							<li><a href="#">Главная</a></li>
-							<li class="active">Оформить заказ</li>
-						</ul>
-					</div>
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
-		</div>
-		<!-- /BREADCRUMB -->
+{#		<!-- BREADCRUMB -->#}
+{#		<div id="breadcrumb" class="section">#}
+{#			<!-- container -->#}
+{#			<div class="container">#}
+{#				<!-- row -->#}
+{#				<div class="row">#}
+{#					<div class="col-md-12">#}
+{#						<h4 class="breadcrumb-header">Оформить заказ</h4>#}
+{#						<ul class="breadcrumb-tree">#}
+{#							<li><a href="#">Главная</a></li>#}
+{#							<li class="active">Оформить заказ</li>#}
+{#						</ul>#}
+{#					</div>#}
+{#				</div>#}
+{#				<!-- /row -->#}
+{#			</div>#}
+{#			<!-- /container -->#}
+{#		</div>#}
+{#		<!-- /BREADCRUMB -->#}
 
-		<!-- SECTION -->
-		<div class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-
-					<div class="col-md-7">
-						<!-- Billing Details -->
-						<div class="billing-details">
-							<div class="section-title">
-								<h3 class="title">Адрес</h3>
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="first-name" placeholder="Имя">
-							</div>
-							<div class="form-group">
-								<input class="input" type="email" name="email" placeholder="Email">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="address" placeholder="Адрес">
-							</div>
-							<div class="form-group">
-								<input class="input" type="tel" name="tel" placeholder="Телефон">
-							</div>
-							<div class="form-group">
-								<div class="input-checkbox">
-									<input type="checkbox" id="create-account">
-									<label for="create-account">
-										<span></span>
-										Зарегистрироваться
-									</label>
-									<div class="caption">
-										<p><b>Регистрируйтесь и получайте новости обо всех акциях, а также личные бонусы!</b></p>
-										<input class="input" type="password" name="password" placeholder="Пароль">
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /Billing Details -->
-
-						<!-- Shiping Details -->
-						<!-- /Shiping Details -->
-						<!-- Order notes -->
-						<div class="order-notes">
-							<textarea class="input" placeholder="Заметки"></textarea>
-						</div>
-						<!-- /Order notes -->
-					</div>
-
-					<!-- Order Details -->
-					<div class="col-md-5 order-details">
-						<div class="section-title text-center">
-							<h3 class="title">Заказ</h3>
-						</div>
-						<div class="order-summary">
-							<div class="order-col">
-								<div><strong>Товары</strong></div>
-								<div><strong><Сумма></Сумма></strong></div>
-							</div>
-							<div class="order-products">
-								<div class="order-col">
-									<div>1 шт. Playstation 4 pro</div>
-									<div>27000 руб</div>
-								</div>
-								<div class="order-col">
-									<div>2 шт. Dualshock 4</div>
-									<div>3400 руб</div>
-								</div>
-							</div>
-							<div class="order-col">
-								<div>Доставка:</div>
-								<div><strong>Бесплатно</strong></div>
-							</div>
-							<div class="order-col">
-								<div><strong>Сумма</strong></div>
-								<div><strong class="order-total">33800 руб</strong></div>
-							</div>
-						</div>
-						<div class="payment-method">
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-1">
-								<label for="payment-1">
-									<span></span>
-									Оплата наличными при получении товара
-								</label>
-								<div class="caption">
-									<p>Вы можете оплачиваеть наличными при доставки и при самовывозе.</p>
-								</div>
-							</div>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-2">
-								<label for="payment-2">
-									<span></span>
-									Оплата банковской картой
-								</label>
-								<div class="caption">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-3">
-								<label for="payment-3">
-									<span></span>
-									Оплата с электронных кошельков
-								</label>
-								<div class="caption">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
-														<div class="input-radio">
-								<input type="radio" name="payment" id="payment-4">
-								<label for="payment-4">
-									<span></span>
-									Безналичный рассчёт
-								</label>
-								<div class="caption">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-						</div>
-						<div class="input-checkbox">
-							<input type="checkbox" id="terms">
-							<label for="terms">
-								<span></span>
-								Я читал и принимаю условия соглашения <a href="#">terms & conditions</a>
-							</label>
-						</div>
-						<a href="#" class="primary-btn order-submit">Заказать</a>
-					</div>
-					<!-- /Order Details -->
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
-		</div>
-		<!-- /SECTION -->
+        <div class="container">
+            <div class="section">
+                <div class="col-md-12 order-details">
+                    <div class="section-title text-center">
+                        <h3 class="title">Ваш заказ</h3>
+                    </div>
+                    <div class="order-summary">
+                        <div class="order-col">
+                            <div><strong>Товары</strong></div>
+                            <div><strong>Сумма</strong></div>
+                        </div>
+                        <div class="order-products">
+                            <div class="order-col">
+                                <div>1 шт. Playstation 4 pro</div>
+                                <div>27000 руб</div>
+                            </div>
+                            <div class="order-col">
+                                <div>2 шт. Dualshock 4</div>
+                                <div>3400 руб</div>
+                            </div>
+                        </div>
+                        <div class="order-col">
+                            <div>Доставка:</div>
+                            <div><strong>Бесплатно</strong></div>
+                        </div>
+                        <div class="order-col">
+                            <div><strong>Сумма</strong></div>
+                            <div><strong class="order-total">33800 руб</strong></div>
+                        </div>
+                    </div>
+                    <div class="payment-method">
+                        <div class="input-radio">
+                            <input type="radio" name="payment" id="payment-1">
+                            <label for="payment-1">
+                                <span></span>
+                                Оплата наличными при получении товара
+                            </label>
+                            <div class="caption">
+                                <p>Вы можете оплачиваеть наличными при доставки и при самовывозе.</p>
+                            </div>
+                            </div>
+                        <div class="input-radio">
+                            <input type="radio" name="payment" id="payment-2">
+                            <label for="payment-2">
+                                <span></span>
+                                Оплата банковской картой
+                            </label>
+                            <div class="caption">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="order-submit-container">
+                            <a href="#" class="primary-btn">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 {% endblock %}
