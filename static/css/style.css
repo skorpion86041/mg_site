@@ -1980,7 +1980,7 @@ textarea.input {
 
 /* my super style for try gods */
 
-.mdl-layout__header-row {
+#second-row  {
     margin: 0 0 16px 0;
 }
 
@@ -2030,9 +2030,6 @@ textarea.input {
     background-color: #15161D;
 }
 
-.mdl-layout__header-row {
-    margin: 0 0 16px 0;
-}
 
 #header {
     width: 100%;
@@ -2216,16 +2213,15 @@ textarea.input {
 
 @media only screen and (max-width:800px) {
     .mdl-layout__header  {
-        display: none;
+        /*display: none;*/
     }
 }
 
 
 
-@media only screen and (device-width) {
-    .section-title .title {
-        margin-left: 40%;
-        margin-right: 40%;
+@media only screen and (max-width: 800px) {
+    .section-title  {
+        text-align: center;
     }
 }
 
@@ -2257,5 +2253,25 @@ textarea.input {
     }
 }
 
+@media screen and (max-width: 1024px){
+    .mdl-layout__header {
+      display: flex;
+    }
+}
 
+@media screen and (max-width: 800px) {
+    #second-row {
+        display: none;
+    }
+}
 
+@media screen and (max-width: 1024px) {
+.mdl-layout__drawer-button {
+        color: #FFFFFF;
+    }
+}
+
+.mdl-textfield--expandable .mdl-button--icon {
+    top: auto;
+    bottom: 19px;
+}
