@@ -2180,96 +2180,65 @@ textarea.input {
 }
 
 
-
 @media only screen and (max-width: 800px) {
     .main-menu {
         display: none;
     }
-}
 
-@media only screen and (min-width: 800px) {
-    .main-menu {
-        display: inline-flex;
-    }
-}
-
-
-
-@media only screen and (min-width: 800px) {
-    .mdl-layout__drawer-button {
-        display: none;
-    }
-}
-
-
-
-
-@media only screen and (min-width:800px) {
-    .mdl-layout__header {
-        display: flex;
-    }
-}
-
-
-@media only screen and (max-width:800px) {
-    .mdl-layout__header  {
-        /*display: none;*/
-    }
-}
-
-
-
-@media only screen and (max-width: 800px) {
     .section-title  {
         text-align: center;
     }
-}
 
-
-
-
-/*@media only screen and (min-width:800px) {*/
-    /*.mdl-textfield--expandable  {*/
-        /*display: none;*/
-    /*}*/
-/*}*/
-
-@media only screen and (max-width:800px) {
-    .mdl-textfield--expandable  {
-        display: inline-flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-    }
-}
-
-
-@media only screen and (max-width:800px) {
-    .mdl-layout__header-row {
-        display: flex;
-        /*flex-direction: row;*/
-        /*flex-wrap: nowrap;*/
-        /*justify-content: flex-end;*/
-    }
-}
-
-@media screen and (max-width: 1024px){
-    .mdl-layout__header {
-      display: flex;
-    }
-}
-
-@media screen and (max-width: 800px) {
     #second-row {
         display: none;
     }
 }
 
-@media screen and (max-width: 1024px) {
-.mdl-layout__drawer-button {
+@media only screen and (min-width: 800px) {
+    .main-menu {
+        display: inline-flex;
+    }
+
+    .mdl-layout__drawer-button {
+        display: none;
+    }
+
+    .mdl-layout__header {
+        display: flex;
+    }
+
+    #search-button {
+        display: none;
+    }
+
+}
+
+/*@media only screen and (max-width:800px) {*/
+    /*.mdl-textfield--expandable  {*/
+        /*display: inline-flex;*/
+        /*flex-direction: row;*/
+        /*flex-wrap: nowrap;*/
+        /*justify-content: flex-end;*/
+    /*}*/
+/*}*/
+
+
+/*@media only screen and (max-width:800px) {*/
+    /*.mdl-layout__header-row {*/
+        /*display: flex;*/
+    /*}*/
+/*}*/
+
+@media screen and (max-width: 1024px){
+    .mdl-layout__header {
+      display: flex;
+    }
+
+    .mdl-layout__drawer-button {
         color: #FFFFFF;
     }
 }
+
 
 .mdl-textfield--expandable .mdl-button--icon {
     top: auto;
