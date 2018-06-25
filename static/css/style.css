@@ -2222,9 +2222,40 @@ textarea.input {
 
 
 
-@media only screen and (max-width:800px) {
+@media only screen and (device-width) {
     .section-title .title {
-        margin-left: 50%;
-        margin-right: 50%;
+        margin-left: 40%;
+        margin-right: 40%;
     }
 }
+
+
+
+
+/*@media only screen and (min-width:800px) {*/
+    /*.mdl-textfield--expandable  {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
+
+@media only screen and (max-width:800px) {
+    .mdl-textfield--expandable  {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+}
+
+
+@media only screen and (max-width:800px) {
+    .mdl-layout__header-row {
+        display: flex;
+        /*flex-direction: row;*/
+        /*flex-wrap: nowrap;*/
+        /*justify-content: flex-end;*/
+    }
+}
+
+
+
