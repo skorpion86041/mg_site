@@ -1518,6 +1518,7 @@ textarea.input {
 
 .order-summary {
   margin: 15px 0px;
+  padding: 10px 0px;
 }
 
 .order-summary .order-col {
@@ -2014,3 +2015,24 @@ textarea.input {
 b, strong {
     font-size: 20px;
 }
+
+.checkout-style {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 8px;
+}
+
+#goods {
+    flex-grow:2;
+}
+
+#quantity {
+    flex-grow: 1;
+}
+
+
+#amount {
+    flex-grow: 0;
+}
+
+
