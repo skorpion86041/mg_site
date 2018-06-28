@@ -1523,6 +1523,7 @@ textarea.input {
 .order-summary .order-col {
   display: table;
   width: 100%;
+  font-size: 18px;
 }
 
 .order-summary .order-col:after {
@@ -1546,7 +1547,7 @@ textarea.input {
 }
 
 .order-summary .order-col .order-total {
-    font-size: 24px;
+    font-size: 22px;
     color: #0f7c10;
 }
 
@@ -2007,4 +2008,9 @@ textarea.input {
 .mdl-textfield--expandable .mdl-button--icon {
     top: auto;
     bottom: 19px;
+}
+
+
+b, strong {
+    font-size: 20px;
 }
