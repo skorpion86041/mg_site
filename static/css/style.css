@@ -238,8 +238,8 @@ textarea.input {
 /*\*----------------------------*/
 
 .section {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .section-title {
@@ -302,12 +302,12 @@ textarea.input {
 \*----------------------------*/
 
 #breadcrumb {
-  padding: 30px 0px;
+  padding: 16px 0px;
   background: #FBFBFC;
   border-bottom: 1px solid #E4E7ED;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  /*text-align: center;*/
 }
 
 #breadcrumb .breadcrumb-header {
@@ -319,7 +319,7 @@ textarea.input {
 }
 
 #breadcrumb .breadcrumb-tree {
-  display: inline-block;
+    display: block;play: inline-block;
 }
 
 #breadcrumb .breadcrumb-tree li {
@@ -1974,9 +1974,15 @@ textarea.input {
     #second-row {
         display: none;
     }
+
+    #breadcrumb {
+        padding: 8px 0px;
+        margin-top: 0;
+        text-align: center;
+    }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 801px) {
     .main-menu {
         display: inline-flex;
     }
@@ -2005,6 +2011,11 @@ textarea.input {
     }
 }
 
+@media screen and (max-width: 992px) {
+    #aside {
+        display: none;
+    }
+}
 
 .mdl-textfield--expandable .mdl-button--icon {
     top: auto;
