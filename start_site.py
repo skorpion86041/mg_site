@@ -47,14 +47,6 @@ def repairs():
 def shares():
     return render_template('shares.html')
 
-@app.route('/training')
-def training():
-    return render_template('training.html')
-
-@app.route('/training2')
-def training2():
-    return render_template('training2.html')
-
 @app.route('/consoles')
 def consoles():
     return render_template('consoles.html')
@@ -63,18 +55,34 @@ def consoles():
 def accessories():
     return render_template('accessories.html')
 
+@app.route('/courier')
+def courier():
+    return render_template('courier.html')
+
+@app.route('/pickup')
+def pickup():
+    return render_template('pickup.html')
+
+@app.route('/data')
+def data():
+    return render_template('data.html')
+
+
+@app.route('/location')
+def location():
+    return render_template('location.html')
+
 @app.route('/games')
 def games():
     return render_template('games.html')
 
-@app.route('/training3')
-def training3():
-    return render_template('training3.html')
+@app.route('/services')
+def services():
+    return render_template('services.html')
 
-@app.route('/training4')
-def training4():
-    return render_template('training4.html')
-
+@app.route('/departure')
+def departure():
+    return render_template('departure.html')
 
 
 # @app.route('/hello')

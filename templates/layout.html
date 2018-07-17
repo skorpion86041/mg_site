@@ -120,7 +120,7 @@
 					<!-- NAV -->
 					<ul class="main-menu container">
 						<li {% if request.path == "/consoles" %} class="active" {% endif %}>
-							<a href="/store">Приставки</a>
+							<a href="/consoles">Приставки</a>
 							<ul class="sub-menu">
 								<li><a href="/store"><img class="menu-img" src="static/img/ps4.svg" class="image-menu"/><br>Playstation</a></li>
 								<li><a href="/store"><img class="menu-img" src="static/img/xbox.svg" class="image-menu"/><br>Xbox</a></li>
@@ -129,7 +129,7 @@
 							</ul>
 						</li>
 						<li {% if request.path == "/store" %} class="active"{% endif %}>
-							<a href="/store">Аксессуары</a>
+							<a href="/accessories">Аксессуары</a>
 								<ul class="sub-menu">
 									<li><a href="/store"><img class="menu-img" src="static/img/joystick_xbox360.svg" class="image-menu"/><br>Контроллеры</a></li>
 									<li><a href="/store"><img class="menu-img" src="static/img/headphones.svg" class="image-menu"/><br>Наушники</a></li>
@@ -139,7 +139,7 @@
 								</ul>
 						</li>
 						<li {% if request.path == "/store" %} class="active"{% endif %}>
-							<a href="/store">Игры</a>
+							<a href="/games">Игры</a>
 							<ul class="sub-menu">
 								<li><a href="/store"><img class="menu-img" src="static/img/ps4.svg" class="image-menu"/><br>Playstation 4</a></li>
 								<li><a href="/store"><img class="menu-img" src="static/img/xbox.svg" class="image-menu"/><br>Xbox One</a></li>
@@ -151,25 +151,25 @@
 							</ul>
 						</li>
 						<li {% if request.path == "/repairs" %} class="active"{% endif %}>
-                            <a href="/repairs">Услуги</a>
+                            <a href="/services">Услуги</a>
                             <ul class="sub-menu">
-                                <li><a href="/store"><img class="menu-img" src="static/img/repairs.svg"/><br>Ремонт</a></li>
-								<li><a href="/store"><img class="menu-img" src="static/img/exchange_3.svg"/><br>Обмен</a></li>
-								<li><a href="/store"><img class="menu-img" src="static/img/departure_specialist_1.svg"/><br>Выезд специалиста</a></li>
+                                <li><a href="/repairs"><img class="menu-img" src="static/img/repairs.svg"/><br>Ремонт</a></li>
+								<li><a href="/exchange"><img class="menu-img" src="static/img/exchange_3.svg"/><br>Обмен</a></li>
+								<li><a href="/departure"><img class="menu-img" src="static/img/departure_specialist_1.svg"/><br>Выезд специалиста</a></li>
                             </ul>
                         </li>
                         <li {% if request.path == "/delivery" %} class="active"{% endif %}>
                             <a href="/delivery">Доставка</a>
                             <ul class="sub-menu">
-                                <li><a href="/store"><img class="menu-img" src="static/img/delivery_1.svg"/><br>Курьером</a></li>
-								<li><a href="/store"><img class="menu-img" src="static/img/courier.svg"/><br>Самовывоз</a></li>
+                                <li><a href="/courier"><img class="menu-img" src="static/img/delivery_1.svg"/><br>Курьером</a></li>
+								<li><a href="/pickup"><img class="menu-img" src="static/img/courier.svg"/><br>Самовывоз</a></li>
                             </ul>
                         </li>
                         <li {% if request.path == "/contacts" %} class="active"{% endif %}>
                             <a href="/contacts">Контакты</a>
                             <ul class="sub-menu">
-                                <li><a href="/store"><img class="menu-img" src="static/img/info_1.svg"/><br>Контактные данные</a></li>
-								<li><a href="/store"><img class="menu-img" src="static/img/map.svg"/><br>Как добраться</a></li>
+                                <li><a href="/data"><img class="menu-img" src="static/img/info_1.svg"/><br>Контактные данные</a></li>
+								<li><a href="/location"><img class="menu-img" src="static/img/map.svg"/><br>Как добраться</a></li>
                             </ul>
                         </li>
 					</ul>
@@ -179,52 +179,44 @@
 			<!-- /container -->
 		</nav>
 		<!-- /NAVIGATION -->
+        <div class="content">
 
 		{% block body %}
         {% endblock %}
 
+        </div>
         <!-- FOOTER -->
 		<footer id="footer">
-				<!-- container -->
 				<div class="container">
-					<!-- row -->
-						<!--<div class="clearfix visible-xs"></div>-->
 							<div class="row footer-center" >
-								<div class="col-sm-2 footer-block"><li><a href="#">О нас</a></li></div>
-								<div class="col-sm-2 footer-block"><li><a href="#">Заказ и возврат</a></li></div>
-								<div class="col-sm-3 footer-block"><li><a href="#">Условия и положения</a></li></div>
-								<div class="col-sm-3 footer-block"><li><a href="#">Отслеживать заказ</a></li></div>
-								<div class="col-sm-2 footer-block"><li><a href="#">Помощь</a></li></div>
+                                <ul class="footer-payments">
+								    <li>
+										<a href="#"><img class="footer-img" src="static/img/icons/facebook-logo.svg"></a>
+									</li>
+									<li>
+										<a href="#"><img class="footer-img" src="static/img/icons/instagram.svg"></a>
+									</li>
+                                    <li>
+										<a href="#"><img class="footer-img" src="static/img/icons/telegram-logo.svg"></a>
+									</li>
+                                    <li>
+										<a href="#"><img class="footer-img" src="static/img/icons/vk-social-network-logo.svg"></a>
+									</li>
+							    </ul>
+                                <span class="copyright">
+								    <script>document.write(new Date().getFullYear());</script> MitinoGame
+							    </span>
+{#								<div class="col-sm-2 footer-block"><li><a href="#">О нас</a></li></div>#}
+{#								<div class="col-sm-2 footer-block"><li><a href="#">Заказ и возврат</a></li></div>#}
+{#								<div class="col-sm-3 footer-block"><li><a href="#">Условия и положения</a></li></div>#}
+{#								<div class="col-sm-3 footer-block"><li><a href="#">Отслеживать заказ</a></li></div>#}
+{#								<div class="col-sm-2 footer-block"><li><a href="#">Помощь</a></li></div>#}
 							</div>
-					<!-- /row -->
 				</div>
-				<!-- /container -->
 
 			<!-- bottom footer -->
 			<div id="bottom-footer">
 				<div class="container">
-                    <!-- row -->
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<ul class="footer-payments">
-								<li>
-										<a href="#"><i class="fa fa-facebook"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-instagram"></i></a>
-									</li>
-							</ul>
-							<span class="copyright">
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								<script>document.write(new Date().getFullYear());</script> Все права защищены
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							</span>
-						</div>
-					</div>
-                    <!-- /row -->
 				</div>
 				<!-- /container -->
 			</div>
