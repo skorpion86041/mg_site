@@ -260,6 +260,13 @@ textarea.input {
     border-radius: 20px;
 }
 
+.section-white-padding {
+    padding: 16px;
+    background-color: #FFFFFF;
+    margin: 16px;
+    border-radius: 20px;
+}
+
 .section-title {
   margin: 30px 0;
 }
@@ -2042,3 +2049,4 @@ textarea.input {
     margin-top: 16px;
     border-radius: 0 0 20px 20px;
 }
+
