@@ -1,6 +1,7 @@
 
 (function($) {
 	// "use strict"
+    $('.slider-repairs').slick();
 
     $('.delete-button').on('click', function (e) {
         $(this).closest('.cart-item').remove();

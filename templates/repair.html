@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="flex-container content-gray" style="flex-direction: column">
+            <div class="slider-repairs" data-slick='{"slidesToShow": 5, "slidesToScroll": 2}'>
+
+                {% for i in range(repairs|length) %}
+
+                    <a href="#" class="slider-repairs-items">
+                        <img src="/static/img/{{ repairs[i]['image'] }}" class="repairs-items-img">
+                        {{ repairs[i]['name'] }}
+                    </a>
+
+                {% endfor %}
+
+            </div>
+
+        <div class="grid-repairs">
+
+            {% for i in range(repairs|length) %}
+
+                <a href="#" class="repairs-items">
+                    <img src="static/img/{{ repairs[i]['image'] }}" class="repairs-items-img">
+                    {{ repairs[i]['name'] }}
+                </a>
+            {% endfor %}
+
+        </div>
+    </div>
+{% endblock %}

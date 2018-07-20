@@ -39,9 +39,13 @@ def delivery():
 def exchange():
     return render_template('exchange.html')
 
-@app.route('/repairs')
+@app.route('/repair')
 def repairs():
-    return render_template('repairs.html')
+    repairs_types = []
+    for i in range(12):
+        my_repair_object = {'name': 'Вид ремонта ' + str(i+1), 'image': 'repair_item.svg'}
+        repairs_types.append(my_repair_object)
+    return render_template('repair.html', repairs=repairs_types)
 
 @app.route('/shares')
 def shares():
@@ -85,20 +89,5 @@ def departure():
     return render_template('departure.html')
 
 
-# @app.route('/hello')
-# def hello():
-#     return 'Hello World'
-#
-#
-# @app.route('/user/<username>')
-# def show_user_profile(username):
-#     return 'Это пользователь ' + username
-#
-#
-# @app.route('/post/<int:post_id>')
-# def show_post(post_id):
-#     return 'ID этого поста : ' + str(post_id)
-
-
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run()
